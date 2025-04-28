@@ -51,3 +51,23 @@ const clearBtn = document.getElementById('clear');
 clearBtn.addEventListener('click', () => {
     display.textContent = 0;
 });
+
+const operatorBtns = document.querySelectorAll('#operatorContainer button');
+
+operatorBtns.forEach(button => {
+    button.addEventListener('click', () => {
+        const operatorClicked = button.textContent;
+
+        if(['+', '-', '*', '/'].includes(operatorClicked)) {
+            userNum1 = Number(display.textContent);
+            operator = operatorClicked;
+            display.textContent = '0';
+        }
+
+        if (operatorClicked === '=') {
+            userNum2 = Number(display.textContent);
+            const result = operate(userNum1, userNum2, operator);
+            display.textContent = result;
+        }
+    });
+});
