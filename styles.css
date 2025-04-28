@@ -1,0 +1,98 @@
+* {
+    background: #1b1b1b;
+    color: #e1e3e1;
+    font-family: 'VT323', monospace;
+}
+
+#title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00ff00;
+}
+
+#calculatorContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#buttonContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+#display {
+    width: 100%;
+    height: 80px;
+    background-color: #222;
+    color: #0f0;
+    font-size: 48px;
+    text-align: right;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: 3px solid #333;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px #0f0;
+}
+
+#inputContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#inputContainer button {
+    flex: 0 0 30%;
+    margin: 5px;
+    height: 70px;
+    width: 70px;
+    font-size: 28px;
+    background-color: #333;
+    border: 2px solid #555;
+    border-radius: 10px;
+    box-shadow: 0 4px #222;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+#operatorContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#operatorContainer button {
+    width: 70px;
+    height: 70px;
+    font-size: 28px;
+    margin: 5px;
+    background-color: #660000;
+    border: 2px solid #aa0000;
+    box-shadow: 0 4px #220000;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+#inputContainer button:active,
+#operatorContainer button:active {
+    transform: translateY(4px);
+    box-shadow: 0 0 #000;
+}
+
+
+
